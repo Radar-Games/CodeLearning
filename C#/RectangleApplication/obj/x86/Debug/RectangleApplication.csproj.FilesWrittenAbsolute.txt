@@ -1,0 +1,5 @@
+/Users/154015/Projects/RectangleApplication/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/154015/Projects/RectangleApplication/bin/Debug/RectangleApplication.pdb
+/Users/154015/Projects/RectangleApplication/bin/Debug/RectangleApplication.exe
+/Users/154015/Projects/RectangleApplication/obj/x86/Debug/RectangleApplication.exe
+/Users/154015/Projects/RectangleApplication/obj/x86/Debug/RectangleApplication.pdb
