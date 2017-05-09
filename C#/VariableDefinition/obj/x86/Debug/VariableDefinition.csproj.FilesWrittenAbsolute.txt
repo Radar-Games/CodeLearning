@@ -1,0 +1,5 @@
+/Users/154015/Documents/GitHub/CodeLearning/C#/VariableDefinition/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/154015/Documents/GitHub/CodeLearning/C#/VariableDefinition/bin/Debug/VariableDefinition.pdb
+/Users/154015/Documents/GitHub/CodeLearning/C#/VariableDefinition/bin/Debug/VariableDefinition.exe
+/Users/154015/Documents/GitHub/CodeLearning/C#/VariableDefinition/obj/x86/Debug/VariableDefinition.exe
+/Users/154015/Documents/GitHub/CodeLearning/C#/VariableDefinition/obj/x86/Debug/VariableDefinition.pdb

@@ -1,0 +1,5 @@
+/Users/154015/Documents/GitHub/CodeLearning/C#/EscapeChar/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/154015/Documents/GitHub/CodeLearning/C#/EscapeChar/bin/Debug/EscapeChar.pdb
+/Users/154015/Documents/GitHub/CodeLearning/C#/EscapeChar/bin/Debug/EscapeChar.exe
+/Users/154015/Documents/GitHub/CodeLearning/C#/EscapeChar/obj/x86/Debug/EscapeChar.exe
+/Users/154015/Documents/GitHub/CodeLearning/C#/EscapeChar/obj/x86/Debug/EscapeChar.pdb
