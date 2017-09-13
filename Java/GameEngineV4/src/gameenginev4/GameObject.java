@@ -41,16 +41,6 @@ public class GameObject
         return y;
     }
     
-    public boolean isUp()
-    {
-        return GameEngineV4.input.isKeyDown(KeyEvent.VK_UP);
-    }
-    
-    public boolean isDown()
-    {
-        return GameEngineV4.input.isKeyDown(KeyEvent.VK_DOWN);
-    }
-    
     public void addToPlayers(PlayerTest i)
     {
         GameEngineV4.addToPlayers(i);
