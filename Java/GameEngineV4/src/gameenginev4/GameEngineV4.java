@@ -91,7 +91,7 @@ public class GameEngineV4 extends JFrame
         input = new InputHandler(this);
         
         player = new PlayerTest();
-        player.initialize(20, 20);
+        player.initialize(20, 20, 20, 20);
     }
     
     void update()

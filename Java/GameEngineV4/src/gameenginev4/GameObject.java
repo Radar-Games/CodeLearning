@@ -13,13 +13,18 @@ import java.awt.event.KeyEvent;
  */
 public class GameObject 
 {
-    int x, y;
+    int x, y, width, length;
     
-    public void initialize(int xx, int yy)
+    public void initialize(int xx, int yy, int _width, int _length)
     {
         x = xx;
         y = yy;
+        
+        width = _width;
+        length = _length;
     }
+    
+    // Variable Manipulation //
     
     public void movex(int i)
     {
@@ -31,6 +36,18 @@ public class GameObject
         y += i;
     }
     
+    public void changeWidth(int i)
+    {
+        width += i;
+    }
+    
+    public void changeLength(int i)
+    {
+        length += i;
+    }
+    
+    // Getting Variables // 
+    
     public int getx()
     {
         return x;
@@ -41,6 +58,18 @@ public class GameObject
         return y;
     }
     
+    public int getWidth()
+    {
+        return width;
+    }
+    
+    public int getLength()
+    {
+        return length;
+    }
+    
+    // Key Presses //
+    
     public boolean isUp()
     {
         return GameEngineV4.input.isKeyDown(KeyEvent.VK_UP);
@@ -50,6 +79,8 @@ public class GameObject
     {
         return GameEngineV4.input.isKeyDown(KeyEvent.VK_DOWN);
     }
+    
+    // Adding to players //
     
     public void addToPlayers(PlayerTest i)
     {

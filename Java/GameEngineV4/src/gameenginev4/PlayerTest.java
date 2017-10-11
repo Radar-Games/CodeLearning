@@ -11,9 +11,9 @@ package gameenginev4;
  */
 public class PlayerTest extends GameObject
 {
-    public void initialize(int xx, int yy)
+    public void initialize(int xx, int yy, int _width, int _length)
     {
-        super.initialize(xx, yy);
+        super.initialize(xx, yy, _width, _length);
         super.addToPlayers(this);
     }
     

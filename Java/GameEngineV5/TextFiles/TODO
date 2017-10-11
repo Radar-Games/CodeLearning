@@ -1,0 +1,14 @@
+What you have to do
+
+
+// To be completed //
+
+- Different types of objects
+ - Player, Solid, etc
+
+- Collision
+ - Not array based
+ - Not resource intensive
+ - Look at getBounds()
+
+// Completed //
