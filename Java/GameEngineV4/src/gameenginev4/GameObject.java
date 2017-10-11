@@ -58,6 +58,7 @@ public class GameObject
         return y;
     }
     
+<<<<<<< HEAD
     public int getWidth()
     {
         return width;
@@ -82,6 +83,8 @@ public class GameObject
     
     // Adding to players //
     
+=======
+>>>>>>> origin/master
     public void addToPlayers(PlayerTest i)
     {
         GameEngineV4.addToPlayers(i);
