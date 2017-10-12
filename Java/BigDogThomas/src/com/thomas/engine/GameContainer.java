@@ -1,7 +1,5 @@
 package com.thomas.engine;
 
-import com.sun.glass.events.KeyEvent;
-
 public class GameContainer implements Runnable
 {
 	private Thread thread;
@@ -13,8 +11,8 @@ public class GameContainer implements Runnable
 	private final double UPDATE_CAP = 1.0/60.0;
 	private boolean isRunning = false;
 	private int width = 320, height = 240;
-	private float scale = 2f;
-	private String title = "FUCKING THOMAS CUNT";
+	private float scale = 1f;
+	private String title = "Thomas the MFing Tank Engine";
 	
 	public GameContainer(AbstractGame game)
 	{
@@ -54,7 +52,7 @@ public class GameContainer implements Runnable
 		
 		while(isRunning)
 		{
-			render = false;	
+			render = true;	
 			
 			firstTime = System.nanoTime()/1000000000.0;
 			passedTime = firstTime - lastTime;
@@ -77,7 +75,6 @@ public class GameContainer implements Runnable
 					frameTime = 0;
 					fps = frames;
 					frames = 0;
-					System.out.println("FPS:" + fps);
 				}
 			}
 			
@@ -86,6 +83,10 @@ public class GameContainer implements Runnable
 				renderer.clear();
 				
 				game.render(this, renderer);
+				
+				renderer.process();
+				
+				renderer.drawText("FPS: " + fps, 0, 0, 0xff00ffff);
 				
 				window.update();
 				frames++;
