@@ -1,5 +1,9 @@
 package com.thomas.engine;
 
+import java.util.ArrayList;
+
+import com.thomas.engine.gameobjects.StaticSolidRect;
+
 public class GameContainer implements Runnable
 {
 	private Thread thread;
@@ -111,7 +115,7 @@ public class GameContainer implements Runnable
 	{
 		
 	}
-
+	
 	public int getWidth() {
 		return width;
 	}
