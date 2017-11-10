@@ -13,15 +13,20 @@ import com.thomas.engine.gfx.Light;
 public class GameManager extends AbstractGame
 {
 	private Player player;
+	
 	private Image background;
 	
-	private ArrayList<StaticSolidRect> ssr = new ArrayList<StaticSolidRect>();
+	private StaticSolidRect solid;
+	
+	private ArrayList<Player> players = new ArrayList<Player>();
 	
 	float temp = 0;
 	
 	public GameManager()
 	{
 		player = new Player("/Images/PlayerTest.png", 0, 0, 10, 10);
+		
+		solid = new StaticSolidRect("/Images/PlayerTest.png", false, Light.FULL, 1, 100, 100, 64, 64);
 		
 		background = new Image("/Images/TestBackGround.png");
 		background.setAlpha(false);
@@ -41,6 +46,14 @@ public class GameManager extends AbstractGame
 	}
 
 	@Override
+	public void initialize(GameContainer gc) 
+	{
+		gc.addSsr(solid);
+		
+		players.add(player);
+	}
+	
+	@Override
 	public void update(GameContainer gc, float dt) 
 	{
 		temp += dt;
@@ -58,7 +71,7 @@ public class GameManager extends AbstractGame
 	{
 		player.render(r);
 		
-		ssr.forEach((i) -> 
+		gc.getSsr().forEach((i) -> 
 		{
 			i.render(r);
 		});

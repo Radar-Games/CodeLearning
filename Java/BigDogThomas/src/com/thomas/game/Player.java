@@ -14,6 +14,7 @@ public class Player
 	private Rectangle2D rect;
 	
 	private int locX, locY;
+	private int newX, newY;
 	private int width, height;
 	
 	private int speed = 1;
@@ -34,26 +35,29 @@ public class Player
 	
 	public void update(GameContainer gc)
 	{
+		newX = locX;
+		newY = locY;
+		
 		// MOVEMENT //
 		
 		if(gc.getInput().isKey(KeyEvent.VK_UP))
 		{
-			locY -= speed;
+			newY -= speed;
 		}
 		
 		if(gc.getInput().isKey(KeyEvent.VK_DOWN))
 		{
-			locY += speed;
+			newY += speed;
 		}
 		
 		if(gc.getInput().isKey(KeyEvent.VK_RIGHT))
 		{
-			locX += speed;
+			newX += speed;
 		}
 		
 		if(gc.getInput().isKey(KeyEvent.VK_LEFT))
 		{
-			locX -= speed;
+			newX -= speed;
 		}
 		
 		rect.setFrame(locX, locY, width, height);
@@ -106,5 +110,29 @@ public class Player
 
 	public Rectangle2D getRect() {
 		return rect;
+	}
+
+	public Image getImage() {
+		return image;
+	}
+
+	public void setImage(Image image) {
+		this.image = image;
+	}
+
+	public int getNewX() {
+		return newX;
+	}
+
+	public void setNewX(int newX) {
+		this.newX = newX;
+	}
+
+	public int getNewY() {
+		return newY;
+	}
+
+	public void setNewY(int newY) {
+		this.newY = newY;
 	}
 }

@@ -12,6 +12,8 @@ public class GameContainer implements Runnable
 	private Input input;
 	private AbstractGame game;
 	
+	private ArrayList<StaticSolidRect> ssr = new ArrayList<StaticSolidRect>();
+	
 	private final double UPDATE_CAP = 1.0/60.0;
 	private boolean isRunning = false;
 	private int width = 320, height = 240;
@@ -54,6 +56,8 @@ public class GameContainer implements Runnable
 		int frames = 0;
 		int fps = 0;
 		
+		game.initialize(this);
+		
 		while(isRunning)
 		{
 			render = true;	
@@ -64,6 +68,8 @@ public class GameContainer implements Runnable
 			
 			unprocessedTime += passedTime;
 			frameTime += passedTime;
+			
+			game.initialize(this);
 			
 			while(unprocessedTime >= UPDATE_CAP)
 			{
@@ -154,5 +160,13 @@ public class GameContainer implements Runnable
 
 	public Input getInput() {
 		return input;
+	}
+
+	public ArrayList<StaticSolidRect> getSsr() {
+		return ssr;
+	}
+	
+	public void addSsr(StaticSolidRect i){
+		ssr.add(i);
 	}
 }
