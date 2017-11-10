@@ -1,0 +1,13 @@
+!SESSION 2017-11-10 12:59:13.651 -----------------------------------------------
+eclipse.buildId=4.7.1.M20170906-1700
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_AU
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/154015/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/154015/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-11-10 13:40:50.052
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-11-10 13:41:15.695
+!MESSAGE Setup tasks were performed during startup updating 4 preferences. See '/Users/154015/eclipse/java-oxygen/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
